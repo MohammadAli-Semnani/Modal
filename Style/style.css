@@ -1,0 +1,90 @@
+@font-face {
+  font-family: yekan;
+  src: url(/Fonts/YekanBakh-SemiBold.ttf);
+}
+::selection {
+  background-color: #a0aee3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: yekan;
+}
+.open-btn {
+  padding: 15px 20px;
+  border-style: none;
+  background-color: #3c6382;
+  color: #fff;
+  font-size: 1.3rem;
+  border-radius: 7px;
+  cursor: pointer;
+}
+body,
+.modal-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+body {
+  height: 100vh;
+  background-color: #82ccdd;
+}
+.modal-container {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  position: fixed;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.3);
+  transition: all 1s ease-in-out;
+}
+
+.modal-content {
+  margin: auto;
+  width: 600px;
+  margin-top: 100px;
+
+  background-color: #f1f2f6;
+  border-radius: 10px;
+  text-align: justify;
+  font-size: 1.05rem;
+  animation: animateTop 0.5s;
+}
+.modal-header {
+  border-radius: 5px 5px 1px 1px;
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 5px;
+  background-color: #3c6382;
+}
+.modal-header img {
+  height: 50px;
+  cursor: pointer;
+}
+.modal-body {
+  padding: 15px 20px;
+  color: #57606f;
+}
+
+@keyframes animateTop {
+  0% {
+    margin-top: -300px;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 100px;
+    opacity: 1;
+  }
+}
+@keyframes animateBotton {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}

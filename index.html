@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./Style/style.css" />
+    <title>Modal</title>
+  </head>
+  <body>
+    <button class="open-btn">باز کردن مدال</button>
+    <div class="modal-container">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h2>عنوان مدال</h2>
+          <img
+            class="close-btn"
+            src="data:image/png;base64,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"
+          />
+        </div>
+        <div class="modal-body">
+          <p>
+            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+            استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در
+            ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و
+            کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. کتابهای زیادی
+            در شصت و سه درصد گذشته، حال و آینده شناخت فراوان جامعه و متخصصان را
+            می طلبد تا با نرم افزارها شناخت بیشتری را برای طراحان رایانه ای علی
+            الخصوص طراحان خلاقی و فرهنگ پیشرو در زبان فارسی ایجاد کرد. در این
+            صورت می توان امید داشت که تمام و دشواری موجود در ارائه راهکارها و
+            شرایط سخت تایپ به پایان رسد وزمان مورد نیاز شامل حروفچینی دستاوردهای
+            اصلی و جوابگوی سوالات پیوسته اهل دنیای موجود طراحی اساسا مورد
+            استفاده قرار گیرد.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./JS/script.js"></script>
+</html>
